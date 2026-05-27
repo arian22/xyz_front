@@ -367,7 +367,10 @@ export default function StorageAdvisor() {
         setUnits(data.recommended_units);
         setLocationUrl(data.location_url ?? null);
         setUnitsVisible(true);
-        setChatModalOpen(false); // close chat modal on mobile when units appear
+        setChatModalOpen(false);
+      } else if (data.reply?.toLowerCase().includes("no available")) {
+        setUnits([]);
+        setUnitsVisible(false);
       }
     } catch {
       setMessages((p) => [...p, { id: uid(), role: "assistant", text: "Couldn't connect. Please try again." }]);
