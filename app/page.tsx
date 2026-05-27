@@ -275,7 +275,7 @@ function ChatContent({
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }}
             placeholder="e.g. sofa near Scarborough…"
-            style={{ flex: 1, fontSize: 14 }}
+            style={{ flex: 1, fontSize: 16 }}
             disabled={loading}
           />
           <button onClick={send} disabled={loading || !input.trim()} style={{
