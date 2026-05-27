@@ -310,7 +310,7 @@ export default function StorageAdvisor() {
   const [unitsVisible, setUnitsVisible] = useState(false);
   const [chatModalOpen, setChatModalOpen] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null!)
 
   useEffect(() => {
     const savedTheme = getCookie("xyz-theme") as ThemeKey | undefined;
