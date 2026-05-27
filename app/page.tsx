@@ -253,8 +253,8 @@ function ChatContent({
 }: {
   messages: Message[]; loading: boolean; input: string;
   setInput: (v: string) => void; send: () => void;
-  inputRef: React.RefObject<HTMLInputElement>;
-  bottomRef: React.RefObject<HTMLDivElement>;
+  inputRef: React.RefObject<HTMLInputElement | null>;
+  bottomRef: React.RefObject<HTMLDivElement | null>;
 }) {
   return (
     <>
