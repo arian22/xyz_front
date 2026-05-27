@@ -572,15 +572,6 @@ export default function StorageAdvisor() {
                     </p>
                   </div>
                   <div style={{ display: "flex", gap: 8 }}>
-                    {locationUrl && (
-                      <button onClick={() => window.open(locationUrl, "_blank")} style={{
-                        padding: "0 14px", height: 32, borderRadius: 8, cursor: "pointer",
-                        fontSize: 12,
-                        fontWeight: 700,
-                        letterSpacing: "-0.01em", background: "transparent",
-                        border: "1.5px solid hsl(var(--primary))", color: "hsl(var(--primary))",
-                      }}>View location →</button>
-                    )}
                     {/* Mobile: re-open chat */}
                     <button className="md:hidden" onClick={() => setChatModalOpen(true)} style={{
                       padding: "0 14px", height: 32, borderRadius: 8, cursor: "pointer",
