@@ -55,7 +55,7 @@ const PERIODS = [
 ];
 
 const EMOJI: Record<string, string> = {
-  compact: "📦", small: "🗃️", medium: "🏠", large: "🏭", parking: "🚗",
+  compact: "📦", small: "🚪", medium: "🏠", large: "🏭", parking: "🚗",
 };
 
 const CAT_BG: Record<string, string> = {
